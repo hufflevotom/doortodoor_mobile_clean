@@ -1,0 +1,64 @@
+name: doortodoor_app
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  bloc: ^8.0.3
+  dio: ^4.0.4
+  domain:
+    path: packages/domain
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.0.1
+  flutter_localizations:
+    sdk: flutter
+  flutter_polyline_points: ^1.0.0
+  geocoding: ^2.0.1
+  google_maps_flutter: ^2.2.1
+  image_picker: ^0.8.4+4
+  intl: ^0.17.0
+  location: ^4.3.0
+  permission_handler: ^10.2.0
+  repositories:
+    path: packages/repositories
+  shared_preferences: ^2.0.15
+
+  url_launcher: ^6.0.10
+
+dev_dependencies:
+  bloc_test: ^9.0.3
+  flutter_launcher_icons: ^0.11.0
+  flutter_native_splash: ^2.2.9
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  very_good_analysis: ^3.0.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path_android: "assets/logo/icon_app.png"
+  image_path_ios: "assets/logo/icon_app.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+    - assets/logo/
+
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand-Bold.ttf
+        - asset: assets/fonts/Quicksand-Light.ttf
+        - asset: assets/fonts/Quicksand-Medium.ttf
+        - asset: assets/fonts/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand-SemiBold.ttf
